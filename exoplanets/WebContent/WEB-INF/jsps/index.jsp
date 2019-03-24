@@ -36,7 +36,7 @@
 		<p />
 		<!-- if the form inputs are not set correctly this JSTL if statement will show the errorMessage. -->
 		<c:if test="${errorMessage != null}">
-			<c:out value="${errorMessage}"></c:out>
+			<c:out  value="${errorMessage}"></c:out>
 		</c:if>
 
 
@@ -48,8 +48,10 @@
 
 		<!-- name to parameter for the sort order which can be changed in the showPlanets JSP. -->
 		<input value="default" name="sort" type="hidden">
-
 	</form>
+	
+	
+	
 	<!--  Using a JSTL url value: <a href="<c:url value="/"/>">Reload</a> <form method="post" action="${pageContext.request.contextPath}/showPlanets">  -->
 
 </body>

@@ -65,9 +65,9 @@ public class ExoPlanetsController {
 			@RequestParam("searchType") String searchType,  Model model, HttpSession session)
 	        {
 		//change the to and from numbers to a string for regex comparison.
-		//Confirm the fields are numbers with or without a decimal point.
-        System.out.println(to + " " + from);
+		System.out.println(to + " " + from);
 		
+      //Confirm the fields are numbers with or without a decimal point.
 		if(!from.matches( "^[0-9]\\d*(\\.\\d+)?$") || !to.matches("^[0-9]\\d*(\\.\\d+)?$")) {
 			System.out.println("The To and From Field parameters must be a positive number.");
 			String errorMessage = "The To and From Field parameters must be a positive number.";
@@ -109,5 +109,10 @@ public class ExoPlanetsController {
 		planetServiceTest.sortPlanets(planetList, sort);
 		
 		return "showPlanets";
+	}
+	
+	@RequestMapping(value="/printPlanets")
+	public String printPlanets() {
+		return "printPlanets";
 	}
 }
