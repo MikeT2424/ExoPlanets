@@ -9,8 +9,6 @@
 </head>
 <body>
 
-	Print planets...
-
 	<table border="1">
 		<tr>
 			<td><b>#</b></td>

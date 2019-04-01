@@ -59,13 +59,7 @@
 				</tr>
 			</c:forEach>
 		</table>
-		
-		
 	</form>
-	
-
 	<a href="<c:url value="/printPlanets"/>">*Printable planets list*</a>
-	
-
 </body>
 </html>
